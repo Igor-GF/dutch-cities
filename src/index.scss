@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$mainDark: rgb(0, 0, 0);
+$mainColor: rgb(255, 125, 50);
+$mainLight: rgb(255, 255, 255);
+$mainMiddle: rgb(129, 129, 129);
+
+body {
+  background-color: $mainMiddle;
+  color: $mainColor;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Viaoda Libre", cursive;
+}
