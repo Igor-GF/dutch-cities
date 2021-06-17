@@ -9,7 +9,11 @@ const TourList = () => {
 
   return (    
     <section className="tourlist">
-      <Tour />
+      {
+        cityTour.map((cityItem) => {
+          return <Tour key={cityItem.id} city={cityItem} />
+        })
+      }
     </section>
   )
 }
