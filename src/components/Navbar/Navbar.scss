@@ -30,3 +30,29 @@
 .active {
   color: $mainColor;
 }
+
+label {
+  font-size: 2rem;
+}
+
+.menu-burger {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    position: relative;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: block;
+  }
+
+  .menu-burger {
+    display: block;
+  }
+}
