@@ -3,4 +3,6 @@
 .tourlist {
   width: 100vw;
   background-color: $mainLight;
+  display: flex;
+  flex-wrap: wrap;
 }
