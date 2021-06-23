@@ -1,6 +1,8 @@
 @import "../../index.scss";
 
 .tourlist {
+  position: absolute;
+  top: 45px;
   width: 100vw;
   background-color: $mainLight;
   display: flex;

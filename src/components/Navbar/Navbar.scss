@@ -7,6 +7,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 45px;
+  z-index: 5;
 }
 
 .navbar-menu {
@@ -55,9 +59,17 @@ label {
   }
 
   .nav-links {
-    flex-direction: column;
     justify-content: center;
     display: none;
+    position: fixed;
+    top: 45px;
+    background-color: black;
+    padding: 2%;
+    right: 0;
+  }
+
+  #toggle:checked ~ .nav-links {
+    display: block;
   }
 
   .menu-burger {
@@ -69,9 +81,5 @@ label {
 
   label {
     cursor: pointer;
-  }
-
-  #toggle:checked + .nav-links {
-    display: block;
   }
 }
