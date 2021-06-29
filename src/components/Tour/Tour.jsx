@@ -1,7 +1,7 @@
 import React from 'react';
 import './Tour.scss';
 
-const Tour = ({ city }) => {
+const Tour = ({ city, removeTour }) => {
   return (
     <article className="tour">
       <div className="img-container">
@@ -10,7 +10,7 @@ const Tour = ({ city }) => {
         <div className="tour-info">
           <div>
             <h3 className="city-name">{city.name}</h3>
-            <span className="close-btn">
+            <span className="close-btn" onClick={() => {removeTour(city.id)}}>
               <i className="fas fa-window-close" />
             </span>
           </div>
