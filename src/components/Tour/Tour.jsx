@@ -5,7 +5,7 @@ const Tour = ({ city, removeTour }) => {
   return (
     <article className="tour">
       <div className="img-container">
-        <img src={city.img}/>
+        <img src={city.img} alt={city.name}/>
         
         <div className="tour-info">
           <div>
