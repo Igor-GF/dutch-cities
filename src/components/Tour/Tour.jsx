@@ -4,12 +4,12 @@ import './Tour.scss';
 const Tour = ({ city, removeTour }) => {
   return (
     <article className="tour">
-      <div className="img-container">
+      <div className="tour__container">
         <img src={city.img} alt={city.name}/>
         
-        <div className="tour-info">
+        <div className="tour__info">
           <div>
-            <h3 className="city-name">{city.name}</h3>
+            <h3 className="tour__info--name">{city.name}</h3>
             <span className="close-btn" onClick={() => {removeTour(city.id)}}>
               <i className="fas fa-window-close" />
             </span>

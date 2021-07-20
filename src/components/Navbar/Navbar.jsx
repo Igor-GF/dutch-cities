@@ -6,21 +6,21 @@ const Navbar = () => {
     <nav className="navbar">
       <h1>Dutch City Tours</h1>
 
-      <div className="navbar-menu">
+      <div className="navbar__menu">
         <div className="menu-burger">
           <label for="toggle">&#9776;</label>
           <input type="checkbox" id="toggle"/>
         </div>
 
-        <ul className="nav-links">
+        <ul className="navbar__menu--links">
           <li>
-            <a href="/" className="nav-link">home</a>
+            <a href="/" className="navbar__menu--link">home</a>
           </li>
           <li>
-            <a href="/" className="nav-link">about</a>
+            <a href="/" className="navbar__menu--link">about</a>
           </li>
           <li>
-            <a href="/" className="nav-link active">tours</a>
+            <a href="/" className="navbar__menu--link active">tours</a>
           </li>
         </ul>
       </div>

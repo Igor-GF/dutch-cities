@@ -11,75 +11,77 @@
   width: 100vw;
   height: 45px;
   z-index: 5;
-}
 
-.navbar-menu {
-  width: 60%;
-}
+  &__menu {
+    width: 60%;
 
-.nav-links {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+    .menu-burger {
+      display: none;
+      text-align: right;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 1rem;
 
-.nav-link {
-  color: $mainLight;
-  text-transform: capitalize;
-  text-decoration: none;
-  transition: all 0.3s linear;
+      label {
+        font-size: 2rem;
+      }
 
-  &:hover {
-    color: $mainColor;
-  }
-}
-
-.active {
-  color: $mainColor;
-}
-
-label {
-  font-size: 2rem;
-}
-
-.menu-burger {
-  display: none;
-  text-align: right;
-}
-
-#toggle {
-  // display: none;
-}
-
-@media (max-width: 480px) {
-  .navbar-menu {
-    width: fit-content;
-    padding: 0% 3%;
+      #toggle {
+        display: none;
+      }
+    }
   }
 
-  .nav-links {
-    justify-content: center;
-    display: none;
-    position: fixed;
-    top: 45px;
-    background-color: black;
-    padding: 2%;
-    right: 0;
-  }
-
-  #toggle:checked ~ .nav-links {
-    display: block;
-  }
-
-  .menu-burger {
+  &__menu--links {
+    list-style-type: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 
-  label {
-    cursor: pointer;
+  &__menu--link {
+    color: $mainLight;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.3s linear;
+
+    .active {
+      color: $mainColor;
+    }
+
+    &:hover {
+      color: $mainColor;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    &__menu {
+      width: fit-content;
+      padding: 0% 3%;
+
+      .menu-burger {
+        display: flex;
+
+        label {
+          cursor: pointer;
+        }
+
+        #toggle:checked ~ .navbar__menu--links {
+          display: block;
+        }
+      }
+    }
+
+    &__menu--links {
+      justify-content: center;
+      display: block;
+      position: fixed;
+      top: 45px;
+      background-color: black;
+      padding: 2%;
+      right: 0;
+    }
   }
 }

@@ -10,13 +10,13 @@
   }
 }
 
-.img-container {
+.tour__container {
   position: relative;
   width: 100%;
   height: fit-content;
 }
 
-.city-name {
+.tour__info--name {
   position: absolute;
   top: 3%;
   left: 3%;
@@ -33,7 +33,7 @@
   opacity: 0;
 }
 
-.tour-info {
+.tour__info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,12 +50,12 @@
   }
 }
 
-.img-container:hover {
+.tour__container:hover {
   .close-btn {
     opacity: 1;
   }
 
-  .tour-info {
+  .tour__info {
     background-color: rgba(0, 0, 0, 0.7);
     h4,
     h5 {
