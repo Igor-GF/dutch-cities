@@ -1,6 +1,6 @@
 ## Dutch City Tours
 
-Application to experiement and study React where you might discouver different Dutch cities.
+Application to experiment and React practice where you might discover different Dutch cities.
 
 # Technologies
 
